@@ -1,0 +1,64 @@
+.Post__Create {
+
+  min-height: 80%;
+
+  #create-post {
+    margin-top: 70px;
+    width: 700px;
+  }
+
+  .intro-header {
+    background: #fff no-repeat scroll center center;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff;
+  }
+
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+
+  .medium-editor-element {
+    font-family: 'Acumin Pro Wide', serif;
+    color: #353535;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    padding: 5px 0 5px 0;
+  }
+
+  .medium-editor-element:focus {
+    outline: none;
+  }
+
+  .form-title {
+    box-shadow: none;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    text-align: center;
+  }
+
+  .form-title:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+}
