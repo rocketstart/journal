@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
+    padding: 130px 0;
+  }
+}
+
+.site-heading h2 {
+  font-size: 40px;
+}
+
+.post-subtitle {
+  font-family: 'Acumin Pro Wide', 'Helvetica Neue', Arial, serif;
+}
+
+.intro-header {
+  background: #fff no-repeat scroll center 22%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}

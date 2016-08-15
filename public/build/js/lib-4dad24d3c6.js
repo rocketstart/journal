@@ -1407,7 +1407,9 @@ window.Modernizr = (function( window, document, undefined ) {
 
 // Medium Editor
 var editor = new MediumEditor('.editable', {
-    placeholder: false
+    placeholder: true,
+    targetBlank: true,
+    text: 'Once upon a time...',
 });
 
 

@@ -6,12 +6,15 @@
 @import 'node_modules/medium-editor/dist/css/medium-editor';
 @import 'node_modules/medium-editor/dist/css/themes/bootstrap';
 // Components
-@import './components/reset.css';
-@import './components/theme.css';
-@import './components/medium-editor.css';
+@import './components/reset';
+@import './components/theme';
+@import './components/medium-editor';
+@import './components/navigation';
+@import './components/intro-header';
 @import './components/footer';
 // Pages
 @import './pages/create.post';
+@import './pages/show.post';
 
 html, body {
   display: flex;
@@ -22,11 +25,8 @@ html, body {
 }
 
 .content {
+  display: flex;
   flex: 1;
-}
-
-.site-heading h2 {
-  font-size: 40px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -44,74 +44,4 @@ p {
   font-size: 21px;
   line-height: 1.58;
   letter-spacing: -.003em;
-}
-
-.post-subtitle {
-  font-family: 'Acumin Pro Wide', 'Helvetica Neue', Arial, serif;
-}
-
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
-    padding: 130px 0;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-
-  .navbar-default {
-    a:hover {
-      color: #fff !important;
-    }
-  }
-
-  .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-
-    a {
-      color: #fff;
-    }
-  }
-
-  .navbar-default .navbar-brand {
-    letter-spacing: 5px;
-    color: #fff;
-  }
-
-  .navbar-default .navbar-nav > li > a {
-    color: #fff;
-  }
-
-}
-
-@media only screen and (min-width: 1170px) {
-
-  .navbar-custom.is-fixed {
-    background-color: transparent;
-    border-bottom: none;
-  }
-
-  .navbar-custom.is-fixed .navbar-brand {
-    color: #fff;
-  }
-
-  .navbar-custom.is-fixed .nav li a {
-    color: #fff;
-  }
-
-}
-
-.intro-header {
-  background: #fff no-repeat scroll center 22%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 50px;
-}
-
-@media (min-width: 1200px) {
-  #show-post {
-    width: 700px;
-  }
 }

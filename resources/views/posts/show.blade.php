@@ -14,15 +14,19 @@
 
         <div class="row">
             <div class="col-xs-4">
-                <div class="text-left">{{ $post->user->name }}</div>
+                <div class="text-left"><span class="text-muted">{{ $post->user->name }}</span></div>
             </div>
             <div class="col-xs-4">
-                @if($post->owner($post))
-                    <div class="text-center"><a href="{{ route('posts.edit', $post->id) }}"><em class="fa fa-pencil"></em> Edit</a></div>
-                @endif
+                {{--@if($post->owner($post))--}}
+                    {{--<div class="text-center">--}}
+                        {{--<a href="{{ route('posts.edit', $post->id) }}" class="text-muted">--}}
+                            {{--<em class="fa fa-pencil"></em> Edit--}}
+                        {{--</a>--}}
+                    {{--</div>--}}
+                {{--@endif--}}
             </div>
             <div class="col-xs-4">
-                <div class="text-right">{{ $post->created_at->format('d. M Y') }}</div>
+                <div class="text-right"><span class="text-muted">{{ $post->created_at->format('d. M Y') }}</span></div>
             </div>
         </div>
 

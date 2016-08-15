@@ -42,8 +42,7 @@ blockquote {
 hr.small {
   max-width: 100px;
   margin: 15px auto;
-  border-width: 4px;
-  border-color: white;
+  border: 4px white;
 }
 .navbar-custom {
   position: absolute;
@@ -336,7 +335,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 0;
+  border-radius: 5px;
   padding: 15px 25px;
 }
 .btn-lg {
@@ -380,12 +379,12 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085A1;
+  background: #428BCA;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085A1;
+  background: #428BCA;
 }
 img::selection {
   color: white;
@@ -396,5 +395,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  -webkit-tap-highlight-color: #0085A1;
+  -webkit-tap-highlight-color: #428BCA;
 }
