@@ -8338,9 +8338,18 @@ footer {
     box-shadow: none; }
 
 html, body {
-  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
   font-family: 'Museo Slab', 'Helvetica Neue', Arial, serif;
   background-color: #fff; }
+
+.content {
+  -webkit-box-flex: 1;
+  flex: 1; }
 
 .site-heading h2 {
   font-size: 40px; }

@@ -14,9 +14,15 @@
 @import './pages/create.post';
 
 html, body {
-  height: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   font-family: 'Museo Slab', 'Helvetica Neue', Arial, serif;
   background-color: #fff;
+}
+
+.content {
+  flex: 1;
 }
 
 .site-heading h2 {

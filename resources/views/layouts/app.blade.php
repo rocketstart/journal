@@ -11,7 +11,10 @@
 
     <!-- Fonts -->
     <script src="https://use.typekit.net/vis0vov.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>try {
+            Typekit.load({async: true});
+        } catch (e) {
+        }</script>
 
 
     <!-- Styles -->
@@ -25,7 +28,9 @@
     @include('includes.header')
 @endif
 
-@yield('content')
+<main class="content">
+    @yield('content')
+</main>
 
 @include('includes.footer')
 

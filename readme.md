@@ -10,7 +10,7 @@ Step 2
 
 ```cp .env.example .env```
 
-Step 3
+Step 32
 
 ```php artisan key:generate```
 
