@@ -25,12 +25,14 @@
                         </div>
                     </div>
                     <hr>
-            @endforeach
+                @endforeach
 
             <!-- Pager -->
-                <div class="text-center">
-                    {{ $posts->render() }}
-                </div>
+                @if($posts->count() > 10)
+                    <div class="text-center">
+                        {{ $posts->render() }}
+                    </div>
+                @endif
             </div>
         </div>
     </div>

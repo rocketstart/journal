@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PostPublished;
+use App\Mail\PostCreated;
 use App\Models\CoverImage;
 use App\Models\Post;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Mail;
 
 class PostController extends Controller
 {
@@ -48,6 +51,9 @@ class PostController extends Controller
         if ($request->exists('publish')) {
             try {
                 $post = Post::create($request->all());
+
+                event(new PostPublished($post));
+
                 $post->published = true;
                 $post->published_at = Carbon::now();
                 $post->save();
