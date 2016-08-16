@@ -9,7 +9,12 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    public $slack_webhook_url = 'https://hooks.slack.com/services/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';
+    /**
+     * Holds the proper Incoming Webhook URL
+     *
+     * @var string
+     */
+    protected $slack_webhook_url;
 
     /**
      * The attributes that are mass assignable.
@@ -36,7 +41,7 @@ class User extends Authenticatable
      */
     public function routeNotificationForSlack()
     {
-        return $this->slack_webhook_url;
+        return $this->slack_webhook_url = env('WEBHOOK_URL');
     }
 
     /**

@@ -14,12 +14,12 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="text-left">
-                                    {{ $post->user->name }}
+                                    <span class="text-muted">{{ $post->user->name }}</span>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="text-right">
-                                    {{ $post->created_at->diffForHumans() }}
+                                    <span class="text-muted">{{ $post->created_at->diffForHumans() }}</span>
                                 </div>
                             </div>
                         </div>

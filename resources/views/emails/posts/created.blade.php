@@ -163,7 +163,7 @@
                                                 href="{{ route('home') }}"><img border="0"
                                                                                 vspace="0"
                                                                                 hspace="0"
-                                                                                src="{{ asset('img/home.jpg') }}"
+                                                                                src="{{ $message->embed(asset('img/home.jpg')) }}"
                                                                                 alt="Rocketstart"
                                                                                 title="Rocketstart"
                                                                                 width="560"
