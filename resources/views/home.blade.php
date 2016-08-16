@@ -12,12 +12,12 @@
                             </h3>
                         </a>
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <div class="text-left">
                                     <span class="text-muted">{{ $post->user->name }}</span>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-xs-6">
                                 <div class="text-right">
                                     <span class="text-muted">{{ $post->created_at->diffForHumans() }}</span>
                                 </div>
