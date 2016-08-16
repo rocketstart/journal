@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Events\PostPublished;
 use App\Mail\PostCreated;
+use App\Models\Post;
 use App\Models\Subscriber;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -15,7 +16,6 @@ class SendMailToSubscribers
      * @var Subscriber
      */
     public $subscriber;
-
     /**
      * Create the event listener.
      *
@@ -29,7 +29,8 @@ class SendMailToSubscribers
     /**
      * Handle the event.
      *
-     * @param  PostPublished  $event
+     * @param  PostPublished $event
+     *
      * @return void
      */
     public function handle(PostPublished $event)

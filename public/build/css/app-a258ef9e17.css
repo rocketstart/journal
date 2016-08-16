@@ -8640,8 +8640,7 @@ form .row:first-child .floating-label-form-group {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
-  border-radius: 5px;
-  padding: 15px 25px; }
+  border-radius: 5px; }
 
 .btn-lg, .btn-group-lg > .btn {
   font-size: 16px;
@@ -8836,5 +8835,10 @@ p {
   font-size: 21px;
   line-height: 1.58;
   letter-spacing: -.003em; }
+
+.alert {
+  position: absolute;
+  bottom: 10px;
+  right: 30px; }
 
 /*# sourceMappingURL=app.css.map */

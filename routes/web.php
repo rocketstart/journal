@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('story/{date}/{permalink}', 'PostController@showPost')->name('show.post');
+Route::post('subscriber', 'SubscriberController@store')->name('subscriber.store');
 
 Route::group(['middleware' => 'auth'], function () {
 

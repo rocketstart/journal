@@ -33,6 +33,8 @@ class PostCreated extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.posts.created');
+        return $this->subject($this->post->title)
+            ->view('emails.posts.created')
+            ->with(['lastPost' => $this->post->published()->get()[0],]);
     }
 }

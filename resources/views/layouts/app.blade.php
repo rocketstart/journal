@@ -22,6 +22,8 @@
 </head>
 <body>
 
+@include('flash::message')
+
 @include('includes.navigation')
 
 @if(!\Request::is('posts/create'))
@@ -30,7 +32,12 @@
 
 <main class="content">
     @yield('content')
+
 </main>
+
+@if(\Request::is('/'))
+    @include('includes.newsletter')
+@endif
 
 @include('includes.footer')
 

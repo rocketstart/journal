@@ -9,6 +9,8 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    public $slack_webhook_url = 'https://hooks.slack.com/services/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';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -26,6 +28,16 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Route notifications for the Slack channel.
+     *
+     * @return string
+     */
+    public function routeNotificationForSlack()
+    {
+        return $this->slack_webhook_url;
+    }
 
     /**
      * Auto hash password

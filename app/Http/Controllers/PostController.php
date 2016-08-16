@@ -58,6 +58,8 @@ class PostController extends Controller
                 $post->published_at = Carbon::now();
                 $post->save();
 
+                flash()->success('Deine Story wurde veröffentlicht!');
+
                 return redirect()->route('home');
 
             } catch (\Exception $e) {
@@ -73,6 +75,8 @@ class PostController extends Controller
             'body'        => $request->body,
             'cover_image' => $request->cover_image,
         ]))->save();
+
+        flash()->success('Deine Story wurde gespeichert');
 
         return redirect()->back()->with('post', $post);
 

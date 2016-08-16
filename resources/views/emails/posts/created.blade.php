@@ -75,7 +75,7 @@
     </style>
 
     <!-- MESSAGE SUBJECT -->
-    <title>Get this responsive email template</title>
+    <title>{{ $post->title }} | Rocketstart Journal</title>
 
 </head>
 
@@ -111,19 +111,15 @@
                         <!-- Set text color to background color -->
                         <div style="display: none; visibility: hidden; overflow: hidden; opacity: 0; font-size: 1px; line-height: 1px; height: 0; max-height: 0; max-width: 0;
 			color: #F0F0F0;" class="preheader">
-                            Available on&nbsp;GitHub and&nbsp;CodePen. Highly compatible. Designer friendly. More than
-                            50%&nbsp;of&nbsp;total email opens occurred on&nbsp;a&nbsp;mobile device&nbsp;— a&nbsp;mobile-friendly
-                            design is&nbsp;a&nbsp;must for&nbsp;email campaigns.
+
+                            {{ strip_tags($post->short_description) }}
+
                         </div>
 
                         <!-- LOGO -->
-                        <a target="_blank" style="text-decoration: none;"
-                           href="https://github.com/konsav/email-templates/"><img border="0" vspace="0" hspace="0"
-                                                                                  src="https://raw.githubusercontent.com/konsav/email-templates/master/images/logo-black.png"
-                                                                                  width="100" height="30"
-                                                                                  alt="Logo" title="Logo" style="
-				color: #000000;
-				font-size: 10px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"/></a>
+                        <a target="_blank" style="text-decoration: none; color: #000;" href="https://rocketstart.ch">
+                            <h2><strong>Rocketstart Journal</strong></h2>
+                        </a>
 
                     </td>
                 </tr>
@@ -145,7 +141,7 @@
 			padding-top: 25px;
 			color: #000000;
 			font-family: sans-serif;" class="header">
-                        Get this responsive email template
+                        {{ $post->title }}
                     </td>
                 </tr>
 
@@ -156,7 +152,7 @@
 			padding-top: 5px;
 			color: #000000;
 			font-family: sans-serif;" class="subheader">
-                        Available on&nbsp;GitHub and&nbsp;CodePen
+                        {{ $post->user->name }}
                     </td>
                 </tr>
 
@@ -164,14 +160,14 @@
                 <tr>
                     <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
 			padding-top: 20px;" class="hero"><a target="_blank" style="text-decoration: none;"
-                                                href="https://github.com/konsav/email-templates/"><img border="0"
-                                                                                                       vspace="0"
-                                                                                                       hspace="0"
-                                                                                                       src="https://raw.githubusercontent.com/konsav/email-templates/master/images/hero-wide.png"
-                                                                                                       alt="Please enable images to view this content"
-                                                                                                       title="Hero Image"
-                                                                                                       width="560"
-                                                                                                       style="
+                                                href="{{ route('home') }}"><img border="0"
+                                                                                vspace="0"
+                                                                                hspace="0"
+                                                                                src="{{ asset('img/home.jpg') }}"
+                                                                                alt="Rocketstart"
+                                                                                title="Rocketstart"
+                                                                                width="560"
+                                                                                style="
 			width: 100%;
 			max-width: 560px;
 			color: #000000; font-size: 13px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"/></a>
@@ -185,8 +181,9 @@
 			padding-top: 25px;
 			color: #000000;
 			font-family: sans-serif;" class="paragraph">
-                        More than 50%&nbsp;of&nbsp;total email opens occurred on&nbsp;a&nbsp;mobile device&nbsp;— a&nbsp;mobile-friendly
-                        design is&nbsp;a&nbsp;must for&nbsp;email campaigns.
+
+                        {{ strip_tags($post->short_description) }}
+
                     </td>
                 </tr>
 
@@ -202,10 +199,10 @@
                                 <tr>
                                     <td align="center" valign="middle"
                                         style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
-                                        bgcolor="#E9703E"><a target="_blank" style="text-decoration: underline;
+                                        bgcolor="#3097D1"><a target="_blank" style="text-decoration: none;
 					color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
-                                                             href="https://github.com/konsav/email-templates/">
-                                            Get the template
+                                                             href="{{ url("story/{$post->created_at->format('Y-m-d')}/{$post->permalink}") }}">
+                                            Weiter lesen
                                         </a>
                                     </td>
                                 </tr>
@@ -222,6 +219,13 @@
                         <hr
                                 color="#E0E0E0" align="center" width="100%" size="1" noshade
                                 style="margin: 0; padding: 0;"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
+			padding-top: 25px;" class="line">
+                        <h3>Letzter Beitrag</h3>
                     </td>
                 </tr>
 
@@ -244,7 +248,7 @@
                                             border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
 					color: #000000;"
                                             src="https://raw.githubusercontent.com/konsav/email-templates/master/images/list-item.png"
-                                            alt="H" title="Highly compatible"
+                                            alt="H" title="{{ $lastPost->title }}"
                                             width="50" height="50"></td>
 
                                 <!-- LIST ITEM TEXT -->
@@ -253,36 +257,9 @@
 					padding-top: 25px;
 					color: #000000;
 					font-family: sans-serif;" class="paragraph">
-                                    <b style="color: #333333;">Highly compatible</b><br/>
-                                    Tested on the most popular email clients for web, desktop and mobile. Checklist
-                                    included.
-                                </td>
-
-                            </tr>
-
-                            <!-- LIST ITEM -->
-                            <tr>
-
-                                <!-- LIST ITEM IMAGE -->
-                                <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
-                                <td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0;
-					padding-top: 30px;
-					padding-right: 20px;"><img
-                                            border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;
-					color: #000000;"
-                                            src="https://raw.githubusercontent.com/konsav/email-templates/master/images/list-item.png"
-                                            alt="D" title="Designer friendly"
-                                            width="50" height="50"></td>
-
-                                <!-- LIST ITEM TEXT -->
-                                <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                                <td align="left" valign="top" style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
-					padding-top: 25px;
-					color: #000000;
-					font-family: sans-serif;" class="paragraph">
-                                    <b style="color: #333333;">Designer friendly</b><br/>
-                                    Sketch app resource file and a&nbsp;bunch of&nbsp;social media icons are&nbsp;also
-                                    included in&nbsp;GitHub repository.
+                                    <b style="color: #333333;"><a
+                                                href="{{ url("story/{$lastPost->created_at->format('Y-m-d')}/{$lastPost->permalink}") }}">{{ $lastPost->title }}</a></b><br/>
+                                    {{ $lastPost->user->name }}
                                 </td>
 
                             </tr>
@@ -292,27 +269,12 @@
                 </tr>
 
                 <!-- LINE -->
-                <!-- Set line color -->
                 <tr>
                     <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
 			padding-top: 25px;" class="line">
                         <hr
                                 color="#E0E0E0" align="center" width="100%" size="1" noshade
                                 style="margin: 0; padding: 0;"/>
-                    </td>
-                </tr>
-
-                <!-- PARAGRAPH -->
-                <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
-			padding-top: 20px;
-			padding-bottom: 25px;
-			color: #000000;
-			font-family: sans-serif;" class="paragraph">
-                        Have a&nbsp;question? <a href="mailto:support@ourteam.com" target="_blank"
-                                                 style="color: #127DB3; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 160%;">support@ourteam
-                            .com</a>
                     </td>
                 </tr>
 
@@ -397,16 +359,8 @@
 			color: #999999;
 			font-family: sans-serif;" class="footer">
 
-                        This email template was sent to&nbsp;you becouse we&nbsp;want to&nbsp;make the&nbsp;world a&nbsp;better
-                        place. You&nbsp;could change your <a href="https://github.com/konsav/email-templates/"
-                                                             target="_blank"
-                                                             style="text-decoration: underline; color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%;">subscription
-                            settings</a> anytime.
-
-                        <!-- ANALYTICS -->
-                        <img width="1" height="1" border="0" vspace="0" hspace="0"
-                             style="margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"
-                             src="https://raw.githubusercontent.com/konsav/email-templates/master/images/tracker.png"/>
+                        <p style="text-align: center">We Change The World</p>
+                        <p style="text-align: center">© Rocketstart 2016. Alle Rechte vorbehalten.</p>
 
                     </td>
                 </tr>
