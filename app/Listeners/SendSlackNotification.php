@@ -34,6 +34,6 @@ class SendSlackNotification
      */
     public function handle(PostPublished $event)
     {
-        Notification::send($this->user->all(), new PostCreated($event->post));
+        $this->user->notify(new PostCreated($event->post));
     }
 }
