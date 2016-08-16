@@ -20,7 +20,7 @@
                     <li><a href="{{ route('show.login') }}">Login</a></li>
                 @else
                     <li><a href="{{ route('posts.create') }}">New Story</a></li>
-                    <li><a href="{{ route('logout') }}"><em class="fa fa-sign-out"></em></a></li>
+                    <li><a href="{{ url('/logout') }}"><em class="fa fa-sign-out"></em></a></li>
                 @endif
             </ul>
         </div>

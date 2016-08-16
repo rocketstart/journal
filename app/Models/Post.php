@@ -74,19 +74,6 @@ class Post extends Model
     }
 
     /**
-     * Check ownership
-     *
-     * @param $query
-     * @param $post
-     *
-     * @return bool
-     */
-    public function scopeOwner($query, $post)
-    {
-        return $post->user_id == auth()->user()->id;
-    }
-
-    /**
      * A post has one user
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
