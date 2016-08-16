@@ -71,7 +71,7 @@ class PostCreated extends Notification implements ShouldQueue
             ->attachment(function ($attachment) use ($url) {
                 $attachment->title($this->post->title, $url)
                     ->fields([
-                        'Content' => strip_tags($this->post->short_description),
+                        '' => strip_tags($this->post->short_description),
                     ]);
             });
     }

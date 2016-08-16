@@ -289,66 +289,66 @@
 
                 <!-- SOCIAL NETWORKS -->
                 <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
-                <tr>
-                    <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
-			padding-top: 25px;" class="social-icons">
-                        <table
-                                width="256" border="0" cellpadding="0" cellspacing="0" align="center"
-                                style="border-collapse: collapse; border-spacing: 0; padding: 0;">
-                            <tr>
+                {{--<tr>--}}
+                    {{--<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;--}}
+			{{--padding-top: 25px;" class="social-icons">--}}
+                        {{--<table--}}
+                                {{--width="256" border="0" cellpadding="0" cellspacing="0" align="center"--}}
+                                {{--style="border-collapse: collapse; border-spacing: 0; padding: 0;">--}}
+                            {{--<tr>--}}
 
-                                <!-- ICON 1 -->
-                                <td align="center" valign="middle"
-                                    style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
-                                    <a target="_blank"
-                                       href="https://raw.githubusercontent.com/konsav/email-templates/"
-                                       style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-					color: #000000;"
-                                                                           alt="F" title="Facebook"
-                                                                           width="44" height="44"
-                                                                           src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/facebook.png"></a>
-                                </td>
+                                {{--<!-- ICON 1 -->--}}
+                                {{--<td align="center" valign="middle"--}}
+                                    {{--style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">--}}
+                                    {{--<a target="_blank"--}}
+                                       {{--href="https://raw.githubusercontent.com/konsav/email-templates/"--}}
+                                       {{--style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;--}}
+					{{--color: #000000;"--}}
+                                                                           {{--alt="F" title="Facebook"--}}
+                                                                           {{--width="44" height="44"--}}
+                                                                           {{--src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/facebook.png"></a>--}}
+                                {{--</td>--}}
 
-                                <!-- ICON 2 -->
-                                <td align="center" valign="middle"
-                                    style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
-                                    <a target="_blank"
-                                       href="https://raw.githubusercontent.com/konsav/email-templates/"
-                                       style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-					color: #000000;"
-                                                                           alt="T" title="Twitter"
-                                                                           width="44" height="44"
-                                                                           src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/twitter.png"></a>
-                                </td>
+                                {{--<!-- ICON 2 -->--}}
+                                {{--<td align="center" valign="middle"--}}
+                                    {{--style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">--}}
+                                    {{--<a target="_blank"--}}
+                                       {{--href="https://raw.githubusercontent.com/konsav/email-templates/"--}}
+                                       {{--style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;--}}
+					{{--color: #000000;"--}}
+                                                                           {{--alt="T" title="Twitter"--}}
+                                                                           {{--width="44" height="44"--}}
+                                                                           {{--src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/twitter.png"></a>--}}
+                                {{--</td>--}}
 
-                                <!-- ICON 3 -->
-                                <td align="center" valign="middle"
-                                    style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
-                                    <a target="_blank"
-                                       href="https://raw.githubusercontent.com/konsav/email-templates/"
-                                       style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-					color: #000000;"
-                                                                           alt="G" title="Google Plus"
-                                                                           width="44" height="44"
-                                                                           src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/googleplus.png"></a>
-                                </td>
+                                {{--<!-- ICON 3 -->--}}
+                                {{--<td align="center" valign="middle"--}}
+                                    {{--style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">--}}
+                                    {{--<a target="_blank"--}}
+                                       {{--href="https://raw.githubusercontent.com/konsav/email-templates/"--}}
+                                       {{--style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;--}}
+					{{--color: #000000;"--}}
+                                                                           {{--alt="G" title="Google Plus"--}}
+                                                                           {{--width="44" height="44"--}}
+                                                                           {{--src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/googleplus.png"></a>--}}
+                                {{--</td>--}}
 
-                                <!-- ICON 4 -->
-                                <td align="center" valign="middle"
-                                    style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
-                                    <a target="_blank"
-                                       href="https://raw.githubusercontent.com/konsav/email-templates/"
-                                       style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-					color: #000000;"
-                                                                           alt="I" title="Instagram"
-                                                                           width="44" height="44"
-                                                                           src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/instagram.png"></a>
-                                </td>
+                                {{--<!-- ICON 4 -->--}}
+                                {{--<td align="center" valign="middle"--}}
+                                    {{--style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">--}}
+                                    {{--<a target="_blank"--}}
+                                       {{--href="https://raw.githubusercontent.com/konsav/email-templates/"--}}
+                                       {{--style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;--}}
+					{{--color: #000000;"--}}
+                                                                           {{--alt="I" title="Instagram"--}}
+                                                                           {{--width="44" height="44"--}}
+                                                                           {{--src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/instagram.png"></a>--}}
+                                {{--</td>--}}
 
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                            {{--</tr>--}}
+                        {{--</table>--}}
+                    {{--</td>--}}
+                {{--</tr>--}}
 
                 <!-- FOOTER -->
                 <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
