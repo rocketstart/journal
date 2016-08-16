@@ -5,7 +5,7 @@
 
             <p>Verfolge unser Journal bis in die tiefen des Weltalls</p>
 
-            <form action="{{ route('subscriber.store', $post->id) }}" method="post">
+            <form action="{{ route('subscriber.store') }}" method="post">
                 {{ csrf_field() }}
 
                 <div class="input-group">
