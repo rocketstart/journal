@@ -9,11 +9,18 @@
                 {{ csrf_field() }}
 
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Deine Email Adresse" name="email">
+                    <input type="email" class="form-control" placeholder="Deine Email Adresse" name="email">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="submit">Abonnieren</button>
                     </span>
                 </div>
+
+                @if ($errors->has('email'))
+                    <hr>
+                    <span class="help-block text-center">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                @endif
 
             </form>
 

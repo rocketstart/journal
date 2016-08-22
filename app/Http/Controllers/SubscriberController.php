@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SubscriberRequest;
 use App\Models\Subscriber;
 use Illuminate\Http\Request;
 
@@ -32,10 +33,11 @@ class SubscriberController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param SubscriberRequest|Request $request
+     *
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SubscriberRequest $request)
     {
         $subscriber = Subscriber::create($request->all());
 
