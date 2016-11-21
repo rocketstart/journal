@@ -28,7 +28,7 @@ class PostController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create()
     {
@@ -70,11 +70,11 @@ class PostController extends Controller
         }
 
         // Save new post (without publishing it)
-        $post = (new Post([
+        $post = Post::create([
             'title'       => $request->title,
             'body'        => $request->body,
             'cover_image' => $request->cover_image,
-        ]))->save();
+        ]);
 
         flash()->success('Saved your story as draft');
 

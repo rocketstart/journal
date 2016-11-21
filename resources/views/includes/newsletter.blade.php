@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
 
-            <p class="text-center">Verfolge unser Journal bis in die tiefen des Weltalls</p>
+            <p class="text-center">Verfolge unser Journal bis in die Tiefen des Weltalls</p>
 
             <form action="{{ route('subscriber.store') }}" method="post">
                 {{ csrf_field() }}
